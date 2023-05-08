@@ -1,0 +1,20 @@
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+  <table>
+    <tr>
+      <th>Employee Name</th>
+      <th>Total Time (in hr)</th>
+    </tr>
+    <tr *ngFor="let row of sortedData">
+      <td>{{row.EmployeeName}}</td>
+      <td>{{row.TotalTime}}</td>
+    </tr>
+  </table>
+<p> </p>
+<div>
+    <canvas id="canvas">{{chart}}</canvas>
+  </div>
+  
